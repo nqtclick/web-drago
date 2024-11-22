@@ -1,0 +1,384 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/* khôi phục lại cỡ chữ mặc định theo rem */
+body {
+  font-size: 1.6rem;
+  font-family: "Plus Jakarta Sans", serif;
+}
+/* =================common================== */
+a {
+  text-decoration: none;
+}
+
+.btn {
+  display: inline-block;
+  min-width: 118px;
+  padding: 0 16px;
+  line-height: 50px;
+  color: #fff;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 600;
+  border-radius: 24.5px;
+  background: #171100;
+}
+
+.main-content {
+  width: 1920px;
+  max-width: calc(100% - 48px);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* =================header================== */
+.header {
+  /* background: #fffcf4; */
+}
+
+header nav a {
+  font-family: Plus Jakarta Sans;
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 27.2px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.header.fixed {
+  position: sticky;
+  top: -28px;
+  z-index: 1;
+  background: #d8d6d6;
+}
+.header .body {
+  display: flex;
+  align-items: center;
+  padding: 36px 0 8px;
+}
+
+.nav {
+  margin-left: auto;
+}
+.nav ul {
+  display: flex;
+}
+
+.nav a {
+  position: relative;
+  color: #5f5b53;
+  font-size: 2.2rem;
+  padding: 8px 21px;
+}
+
+.nav li.active a,
+.nav a:hover {
+  color: #171100;
+  /* font-weight: 600; */
+  text-shadow: 1px 0 0 currentColor;
+}
+
+.nav li.active a::after {
+  position: absolute;
+  left: 21px;
+  bottom: 6px;
+  display: block;
+  content: "";
+  width: 12px;
+  height: 2px;
+  border-radius: 1px;
+  background: #171100;
+}
+
+.header .btn-sign-up {
+  min-width: 144px;
+}
+
+.header .action {
+  margin-left: 49px;
+}
+
+/* KẾT NỐI */
+.ketnoi {
+  padding: 200px 0 120px;
+}
+
+.ketnoi .brand {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ketnoi .heading {
+  font-size: 4.5rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  line-height: 1.24;
+}
+
+.brand-top {
+  position: relative;
+}
+.ketnoi .khampha {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.ketnoi .item {
+  width: 430px;
+}
+
+.ketnoi .body {
+  margin-top: 120px;
+  width: 1170px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.ketnoi .tieude {
+  margin-top: 19px;
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 30px;
+  text-align: left;
+}
+
+.ketnoi .chinhanh {
+  margin-top: 9px;
+  font-size: 2.5rem;
+  font-weight: 600;
+  line-height: 30px;
+}
+
+.ketnoi .item {
+  width: 430px;
+}
+
+.ketnoi .body {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.about {
+  margin-top: 200px;
+  display: flex;
+}
+
+.doitac .heading,
+.about .heading {
+  text-transform: uppercase;
+  font-size: 4.5rem;
+  font-weight: 500;
+  line-height: 98.8px;
+  letter-spacing: 0.02em;
+}
+
+.about .giatri .desc {
+  font-weight: 400;
+  line-height: 27.2px;
+  color: #404040;
+}
+
+.about-top {
+  margin-top: 48px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.about .giatri h3 {
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  font-weight: 500;
+  line-height: 30px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.about .timhieu {
+  width: 737px;
+}
+
+.about .timhieu .desc {
+  font-family: Plus Jakarta Sans;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 27.2px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.about .giatri h3 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  line-height: 30px;
+  color: #111111;
+}
+
+.about .timhieu .timhieuthem {
+  margin-top: 32px;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 27.2px;
+  padding: 8px 24px;
+}
+
+.about .body {
+  margin-top: 120px;
+}
+
+.about .body img {
+  object-fit: cover;
+}
+
+/* ĐỐI TÁC */
+.doitac {
+  margin-top: 200px;
+  display: flex;
+}
+.doitac .tincay {
+  display: flex;
+  justify-content: space-between;
+}
+
+.doitac .tincay img {
+  display: flex;
+  gap: 88px;
+  object-fit: cover;
+}
+
+.doitac .tincay {
+  margin-top: 120px;
+}
+
+/* THÀNH TỰU */
+.thanhtuu {
+  margin-top: 200px;
+}
+
+.thanhtuu .body {
+  position: relative;
+}
+
+.thanhtuu .item img {
+  margin-top: 28px;
+}
+.thanhtuu .top {
+  width: 651px;
+}
+
+.thanhtuu .heading {
+  text-transform: uppercase;
+  font-size: 76px;
+  font-weight: 500;
+  line-height: 98.8px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.thanhtuu .desc {
+  margin-top: 32px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 27.2px;
+}
+
+.thanhtuu .body {
+  margin-top: 120px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.thanhtuu .body .item {
+  gap: 275px;
+  width: 430px;
+}
+
+.thanhtuu .body h3 {
+  font-size: 39px;
+  font-weight: 600;
+  line-height: 46.8px;
+}
+
+.thanhtuu .item strong {
+  font-size: 61px;
+  font-weight: 700;
+  line-height: 73.2px;
+  margin-right: 37px;
+}
+
+.thanhtuu .item p {
+  margin-top: 40px;
+}
+
+/* FOOTER */
+footer {
+  margin-top: 200px;
+}
+
+footer .chinhanh {
+  display: flex;
+  width: 900px;
+  justify-content: space-around;
+}
+
+footer .body {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 200px;
+  background: #0f0f0f;
+  padding: 200px 40px;
+}
+
+footer .thongtin {
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 30px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+footer .thongtin .lienhe {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 27.2px;
+  color: #111111;
+  background: #ffffff;
+  padding: 8px 24px;
+  margin-top: 48px;
+}
+
+footer h3 {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #818181;
+}
+
+footer p {
+  margin-top: 16px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #ffffff;
+}
+
+footer .truso a {
+  display: inline-block;
+  text-decoration: none;
+  margin-top: 16px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+}
